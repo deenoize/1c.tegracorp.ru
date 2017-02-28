@@ -5,4 +5,4 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync . s3://tegracorp.ru/ --region eu-central-1 --delete
+      - ./deploy.sh
