@@ -3,8 +3,8 @@
  
  echo '1. Updating sources'		
  cd /var/www/tegracorp.ru/
- sudo rm -rf .* *
- git clone https://github.com/deenoize/tegracorp.ru.git		
+ rm -rf ..?* .[!.]* *
+ git clone https://github.com/deenoize/tegracorp.ru.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard	
  		
  echo 'Done!'		
  		
