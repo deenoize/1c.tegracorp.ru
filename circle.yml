@@ -2,7 +2,7 @@ test:
   override:
     - echo "test"
 deployment:
-  prod:
+  production:
     branch: master
     commands:
-      - deploy.sh
+      - ./deploy.sh
