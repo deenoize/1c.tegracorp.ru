@@ -11,7 +11,7 @@ var mr_firstSectionHeight,
 document.getElementById('feedback-form').addEventListener('submit', function(evt){
     var http = new XMLHttpRequest(), f = this;
     evt.preventDefault();
-    http.open("POST", "http://1c.tegracorp.ru/js/contacts.php", true);
+    http.open("POST", "https://tegracorp.ru/js/contacts.php", true);
     http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     http.send("nameFF=" + f.nameFF.value + "&contactFF=" + f.contactFF.value + "&messageFF=" + f.messageFF.value);
     http.onreadystatechange = function() {
@@ -59,7 +59,7 @@ jQuery(document).ready(function($){
 
 //MainStuff
 
-$(document).ready(function() { 
+$(document).ready(function() {
     "use strict";
 
     // Smooth scroll to inner links
@@ -587,7 +587,7 @@ $(document).ready(function() {
         }
         // End contact form code
 
-    // Get referrer from URL string 
+    // Get referrer from URL string
     if (getURLParameter("ref")) {
         $('form.form-email').append('<input type="text" name="referrer" class="hidden" value="' + getURLParameter("ref") + '"/>');
     }
@@ -602,9 +602,9 @@ $(document).ready(function() {
         $('section').removeClass('parallax');
     }
 
-}); 
+});
 
-$(window).load(function() { 
+$(window).load(function() {
     "use strict";
 
     // Initialize Masonry
@@ -660,7 +660,7 @@ $(window).load(function() {
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 
 
-}); 
+});
 
 function resizeVid() {
 
@@ -811,6 +811,3 @@ function updateFloatingFilters() {
         }
     }
 }
-
-
-
